@@ -63,16 +63,16 @@ document.addEventListener('DOMContentLoaded', function() {
       feedbackDiv.innerHTML = " Sending your message...";
       
       setTimeout(() => {
-        //ma Clear angform fields after successful submission
+        //ma Clear angform fields after successful submission kg may magwa nga message after sendng
         nameInput.value = '';
         emailInput.value = '';
         messageInput.value = '';
-        feedbackDiv.innerHTML = "✅ Thanks " + name + "! I'll get back to you soon. (demo)";
+        feedbackDiv.innerHTML = "✅ Thanks " + name + "! I'll get back to you soon.";
         feedbackDiv.style.color = "#2b6e47";
         
         // Reset feedback after 4 seconds
         setTimeout(() => {
-          if (feedbackDiv.innerHTML.includes("Thanks") || feedbackDiv.innerHTML.includes("demo")) {
+          if (feedbackDiv.innerHTML.includes("Thanks") ) {
             feedbackDiv.innerHTML = "";
           }
         }, 4000);
